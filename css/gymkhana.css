@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  background-color: black;
+}
+.gymkhana-header {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+  position: relative;
+  z-index: 10000000000000000000000;
+}
+.entire-page {
+  height: 100vh;
+}
+.main-text {
+  min-height: 30vh;
+  width: 80vw !important;
+  background: transparent;
+  border: 2px solid white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 6vh; */
+  position: relative;
+  z-index: 999999999999999999999999999999999;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-text p {
+  margin: auto 3em;
+  display: inline-block;
+  font-family: sans-serif;
+  color: white;
+}
+.footer {
+  text-align: center;
+  background-color: #ccc;
+  height: 20vh;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  font-size: 2rem;
+  width: 100vw;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  transition: all 0.4s ease;
+  position: absolute;
+  z-index: 1000;
+  bottom: 0;
+  /* margin-bottom: 0px; */
+  margin-bottom: -15vh;
+}
+#footerp {
+  transition: all 0.5s ease-out;
+
+  display: block;
+}
+
+.moveup {
+  margin-bottom: 0;
+  display: block;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+/* .displayp {
+  transition: all 0.5s ease-out;
+  position: relative;
+  top: 0;
+  display: block;
+} */
+.logo {
+  width: 15em;
+  height: auto;
+  transition: 0.2s ease all;
+}
+.club-link-logo {
+  position: absolute;
+  bottom: 70px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  z-index: 1;
+  width: 100vw;
+}
+
+a :hover {
+  opacity: 0.6;
+}
+.footertwo {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  height: 5vh;
+  width: 100vw;
+  background-color: #ccc;
+  overflow: hidden;
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .logo {
+    width: 12rem;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .logo {
+    width: 10rem;
+  }
+  .club-link-logo {
+    position: absolute;
+    bottom: 90px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .logo {
+    width: 8rem;
+  }
+  .club-link-logo {
+    position: relative;
+    top: 5em;
+  }
+  /* .footer {
+    height: 20vh;
+  } */
+}
+@media screen and (max-width: 651px) {
+  * {
+    overflow: visible !important;
+  }
+  .footer {
+    display: none !important;
+  }
+
+  .entire-page {
+    height: 100%;
+    overflow: hidden;
+  }
+  .moveup {
+    margin: 0;
+    display: block;
+    position: relative !important;
+    bottom: 0px !important;
+  }
+  .club-link-logo {
+    /* background-color: red; */
+    /* margin-bottom: 70px; */
+    position: relative;
+    top: 20px;
+  }
+  .logo {
+    width: 10.5em;
+    /* margin-bottom: 10vh; */
+  }
+  .kalam-logo {
+    margin-bottom: 10vh;
+  }
+  .footertwo {
+    display: block;
+    position: absolute !important;
+    /* margin-top: 100%; */
+    /* margin-top: 10vh; */
+    bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    overflow: hidden;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    /* width: 50vw; */
+  }
+  .entire-page {
+    position: relative;
+    z-index: 3;
+  }
+}
+@media screen and (max-width: 473px) {
+  .span-iitgoa {
+    display: block;
+  }
+}
+@media screen and (max-width: 321px) {
+  .footer p {
+    font-size: 1.2rem;
+  }
+}
